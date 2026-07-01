@@ -41,6 +41,17 @@ It is designed as a **multi-agent orchestration platform** — not just a chatbo
 
 ---
 
+## 📱 Companion Android App: E.D.I.T.H. HUD
+
+To complement the desktop engine, E.D.I.T.H. features a mobile companion Android application called **E.D.I.T.H. HUD**.
+
+### Key Features:
+*   🎙️ **Voice Commands:** Speak commands directly into your phone to trigger tasks and execute operations on your host PC.
+*   💬 **Real-time Chat:** Chat with E.D.I.T.H. dynamically with minimal latency.
+*   🔌 **WebSocket Sync:** Connects directly to the host PC engine via WebSockets for real-time streaming of speech transcripts, replies, and execution feedback.
+
+---
+
 ## ⚡ Features
 
 ### 🏗️ Core Architecture
