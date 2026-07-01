@@ -71,7 +71,7 @@ class SlackChannel(BaseChannel):
                 self._status = ChannelStatus.CONNECTED
                 return
 
-            self._listener_thread = threading.Thread(daemon=True, 
+            self._listener_thread = threading.Thread( 
                 target=self._socket_mode_loop,
                 daemon=True,
             )

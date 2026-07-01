@@ -78,7 +78,7 @@ class SyncScheduler:
             return
 
         self._stop.clear()
-        self._thread = threading.Thread(daemon=True, 
+        self._thread = threading.Thread( 
             target=self._loop, daemon=True, name="sync_scheduler"
         )
         self._thread.start()

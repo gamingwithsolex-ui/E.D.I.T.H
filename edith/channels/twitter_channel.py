@@ -178,7 +178,7 @@ class TwitterChannel(BaseChannel):
         self._stop_event.clear()
         self._status = ChannelStatus.CONNECTING
 
-        self._listener_thread = threading.Thread(daemon=True, 
+        self._listener_thread = threading.Thread( 
             target=self._poll_mentions, daemon=True,
         )
         self._listener_thread.start()

@@ -117,7 +117,7 @@ class AgentScheduler:
         if self._bus:
             self._bus.subscribe(EventType.AGENT_TICK_END, self._on_tick_event)
         self._stop_event.clear()
-        self._thread = threading.Thread(daemon=True, 
+        self._thread = threading.Thread( 
             target=self._loop, daemon=True, name="agent-scheduler"
         )
         self._thread.start()

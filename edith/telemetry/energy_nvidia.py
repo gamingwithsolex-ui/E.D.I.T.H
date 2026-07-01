@@ -188,7 +188,7 @@ class NvidiaEnergyMonitor(EnergyMonitor):
         lock = threading.Lock()
         stop_event = threading.Event()
 
-        thread = threading.Thread(daemon=True, 
+        thread = threading.Thread( 
             target=self._polling_loop,
             args=(
                 power_ticks,

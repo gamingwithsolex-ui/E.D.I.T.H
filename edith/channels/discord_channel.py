@@ -61,7 +61,7 @@ class DiscordChannel(BaseChannel):
         try:
             import discord  # noqa: F401
 
-            self._listener_thread = threading.Thread(daemon=True, 
+            self._listener_thread = threading.Thread( 
                 target=self._gateway_loop,
                 daemon=True,
             )

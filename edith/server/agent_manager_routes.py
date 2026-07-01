@@ -1550,7 +1550,7 @@ def create_agent_manager_router(
                                     result = agent_inst.run(text)
                                     return result.content or "No results."
 
-                                t = threading.Thread(daemon=True, 
+                                t = threading.Thread( 
                                     target=run_daemon,
                                     kwargs={
                                         "chat_identifier": identifier,
@@ -1805,7 +1805,7 @@ def create_agent_manager_router(
                         f"ERROR: {exc}",
                     )
 
-            threading.Thread(daemon=True, 
+            threading.Thread( 
                 target=_immediate_tick,
                 daemon=True,
             ).start()

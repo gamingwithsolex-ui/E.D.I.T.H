@@ -123,7 +123,7 @@ class GmailChannel(BaseChannel):
             logger.info("Gmail channel connected")
 
             # Start polling thread
-            self._listener_thread = threading.Thread(daemon=True, 
+            self._listener_thread = threading.Thread( 
                 target=self._poll_loop,
                 daemon=True,
             )

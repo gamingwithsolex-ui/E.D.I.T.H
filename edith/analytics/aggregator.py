@@ -71,7 +71,7 @@ class SessionAggregator:
         self._sessions: dict[str, _SessionStats] = {}
         self._lock = threading.Lock()
         self._shutdown = threading.Event()
-        self._flusher = threading.Thread(daemon=True, 
+        self._flusher = threading.Thread( 
             target=self._flush_idle_loop,
             args=(flusher_tick_s,),
             daemon=True,

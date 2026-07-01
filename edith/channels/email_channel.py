@@ -85,7 +85,7 @@ class EmailChannel(BaseChannel):
         self._status = ChannelStatus.CONNECTING
 
         if self._imap_host:
-            self._listener_thread = threading.Thread(daemon=True, 
+            self._listener_thread = threading.Thread( 
                 target=self._imap_poll_loop,
                 daemon=True,
             )

@@ -167,7 +167,7 @@ class WhatsAppBaileysChannel(BaseChannel):
                 text=True,
                 bufsize=1,
             )
-            self._reader_thread = threading.Thread(daemon=True, 
+            self._reader_thread = threading.Thread( 
                 target=self._reader_loop,
                 daemon=True,
             )
