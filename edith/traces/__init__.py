@@ -1,5 +1,15 @@
-"""Execution traces."""
+"""Trace system — full interaction-level recording and analysis.
 
-class TraceLogger:
-    """Logs specific execution steps and tool invocations."""
-    pass
+The trace system captures the complete sequence of steps an agent takes to
+handle a query.  Unlike telemetry (which records per-inference metrics), traces
+record the *decision-making process*: which model was selected, what memory was
+retrieved, which tools were called, and the final response.
+
+Traces are the primary input to the learning system.
+"""
+
+from edith.traces.analyzer import TraceAnalyzer
+from edith.traces.collector import TraceCollector
+from edith.traces.store import TraceStore
+
+__all__ = ["TraceAnalyzer", "TraceCollector", "TraceStore"]

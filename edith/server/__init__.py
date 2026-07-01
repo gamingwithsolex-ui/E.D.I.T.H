@@ -1,5 +1,3 @@
-"""Server setup, SSE routers, and HTTP handlers."""
+"""OpenAI-compatible API server for OpenJarvis."""
 
-class EdithServer:
-    """SSE/HTTP FastAPI/Starlette web server wrapper."""
-    pass
+from __future__ import annotations

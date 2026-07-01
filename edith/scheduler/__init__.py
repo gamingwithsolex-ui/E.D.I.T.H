@@ -1,5 +1,6 @@
-"""Task scheduler for recurring and background jobs."""
+"""Task scheduler module — cron/interval/once scheduling with SQLite persistence."""
 
-class TaskScheduler:
-    """Schedules cron jobs and future asynchronous events."""
-    pass
+from edith.scheduler.scheduler import ScheduledTask, TaskScheduler
+from edith.scheduler.store import SchedulerStore
+
+__all__ = ["ScheduledTask", "SchedulerStore", "TaskScheduler"]

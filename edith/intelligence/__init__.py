@@ -1,5 +1,11 @@
-"""LLM models orchestration and cognitive engine."""
+"""Intelligence primitive — the model definition and catalog."""
 
-class IntelligenceOrchestrator:
-    """Routes requests to optimized LLMs (Gemini, OpenAI, etc.)."""
-    pass
+from __future__ import annotations
+
+from edith.intelligence.model_catalog import (
+    BUILTIN_MODELS,
+    merge_discovered_models,
+    register_builtin_models,
+)
+
+__all__ = ["BUILTIN_MODELS", "merge_discovered_models", "register_builtin_models"]

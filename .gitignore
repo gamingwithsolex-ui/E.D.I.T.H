@@ -136,3 +136,38 @@ cython_debug/
 # E.D.I.T.H specific ignores
 .env
 scratch/
+scratch_*.py
+
+# Audio / model reference files (voice cloning samples)
+*.mp3
+*.wav
+*.flac
+*.ogg
+
+# ML / serialized model files
+*.pt
+*.pth
+*.ckpt
+*.pkl
+*.bin
+*.onnx
+*.safetensors
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Android build artifacts
+*.apk
+*.aab
+android companion app/
+
+# Node (if any frontend tooling added)
+node_modules/
+.next/
+out/
+
+# Misc OS files
+.DS_Store
+Thumbs.db

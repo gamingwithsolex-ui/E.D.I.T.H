@@ -1,5 +1,17 @@
-"""Speech processing (STT and TTS integrations)."""
+"""Speech subsystem — speech-to-text and text-to-speech backends."""
 
-class SpeechPipeline:
-    """Integrates voice streaming, voice transcription, and synthesis."""
-    pass
+import importlib
+
+# Optional STT backends — each registers itself via @SpeechRegistry.register()
+for _mod in ("faster_whisper", "openai_whisper", "deepgram"):
+    try:
+        importlib.import_module(f".{_mod}", __name__)
+    except ImportError:
+        pass
+
+# Optional TTS backends — each registers itself via @TTSRegistry.register()
+for _mod in ("cartesia_tts", "kokoro_tts", "openai_tts"):
+    try:
+        importlib.import_module(f".{_mod}", __name__)
+    except ImportError:
+        pass

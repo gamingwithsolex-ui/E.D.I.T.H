@@ -1,1 +1,1 @@
-"""UI interfaces (web templates, web endpoints)."""
+# Interfaces module

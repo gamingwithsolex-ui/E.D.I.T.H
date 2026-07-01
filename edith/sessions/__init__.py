@@ -1,5 +1,5 @@
-"""Active agent sessions and context history trackers."""
+"""Cross-channel session management."""
 
-class SessionManager:
-    """Tracks active conversational sessions and user context histories."""
-    pass
+from edith.sessions.session import Session, SessionIdentity, SessionStore
+
+__all__ = ["Session", "SessionIdentity", "SessionStore"]

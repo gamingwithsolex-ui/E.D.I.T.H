@@ -1,5 +1,1 @@
-"""Prompt template engine."""
-
-class PromptTemplateManager:
-    """Loads, parses, and injects context into system prompts."""
-    pass
+from __future__ import annotations
